@@ -1,0 +1,23 @@
+<mvc:View controllerName="com.esr.myfirstapplication.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<VBox justifyContent="Center" alignItems="Center" class="sapUiMediumMargin">
+							<Label text="{i18n>form.Name}" labelFor="iName" />
+							<Input id="iName" placeholder="{i18n>form.Name}" width="12rem" class="sapUiSmallMarginBeginEnd" />
+							<Label text="{i18n>form.Surname}" labelFor="iSurname" />
+							<Input id="iSurname" placeholder="{i18n>form.Surname}" width="12rem" class="sapUiSmallMarginBeginEnd" />
+							<Label text="{i18n>form.Email}" labelFor="iEmail" />
+							<Input id="iEmail" placeholder="{i18n>form.Email}" width="12rem" class="sapUiSmallMarginBeginEnd" />
+							<Label text="{i18n>form.DateOfBirth}" labelFor="iDateOfBirth" />
+							<DatePicker id="iDateOfBirth" placeholder="{i18n>form.DateOfBirth}" width="12rem" />
+							<Button type="Accept" text="Accept" press="onPress" width="12rem" />
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

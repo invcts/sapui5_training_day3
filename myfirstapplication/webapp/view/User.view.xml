@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.esr.myfirstapplication.controller.User" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Page id="page" title="{i18n>title}">
+		<content>
+			<VBox justifyContent="Center" alignItems="Center" class="sapUiMediumMargin">
+				<Label text="{i18n>form.Name}" labelFor="tName"/>
+				<Text id="tName" text="{userdata>/name}" class="sapUiSmallMargin"/>
+				<Label text="{i18n>form.Surname}" labelFor="tSurname"/>
+				<Text id="tSurname" text="{userdata>/surname}" class="sapUiSmallMargin"/>
+				<Label text="{i18n>form.Email}" labelFor="tEmail"/>
+				<Text id="tEmail" text="{userdata>/email}" class="sapUiSmallMargin"/>
+				<Label text="{i18n>form.DateOfBirth}" labelFor="tDateOfBirth"/>
+				<Text id="tDateOfBirth" 
+					text="{
+						path: 'userdata>/dateOfBirth',
+						formatter: '.formatter.formatDateString'
+					}" class="sapUiSmallMargin" />
+				<Button text="{i18n>user.navBack}" type="Reject" press="onNavBack" />
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>
